@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/GorillaNews/static/css/main.073c9b0a.css",
-    "main.js": "/GorillaNews/static/js/main.784f7b7e.js",
+    "main.js": "/GorillaNews/static/js/main.4cefbb76.js",
     "static/js/787.4c026eef.chunk.js": "/GorillaNews/static/js/787.4c026eef.chunk.js",
     "static/media/loading.gif": "/GorillaNews/static/media/loading.925e6c7d586c5cbf1edb.gif",
     "index.html": "/GorillaNews/index.html",
     "main.073c9b0a.css.map": "/GorillaNews/static/css/main.073c9b0a.css.map",
-    "main.784f7b7e.js.map": "/GorillaNews/static/js/main.784f7b7e.js.map",
+    "main.4cefbb76.js.map": "/GorillaNews/static/js/main.4cefbb76.js.map",
     "787.4c026eef.chunk.js.map": "/GorillaNews/static/js/787.4c026eef.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.784f7b7e.js"
+    "static/js/main.4cefbb76.js"
   ]
 }
