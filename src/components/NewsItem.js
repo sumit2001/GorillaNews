@@ -15,10 +15,10 @@ const NewsItem = (props) => {
     }
   } else {
     image = true;
-    imageUrl = "https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/04/box-office-kgf-chapter-2-hindi-sets-another-massive-record-enters-200-crore-club-in-just-a-little-over-4-days-is-bigger-than-the-biggest-bollywood-blockbusters-001.jpg";
+    imageUrl = "https://as2.ftcdn.net/v2/jpg/01/67/74/79/1000_F_167747932_NE1da5cf9FM30QExtlFjbmk9ypItoJl2.jpg";
   }
   const handleImgError = e => {
-    e.target.src = "https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/04/box-office-kgf-chapter-2-hindi-sets-another-massive-record-enters-200-crore-club-in-just-a-little-over-4-days-is-bigger-than-the-biggest-bollywood-blockbusters-001.jpg"
+    e.target.src = "https://as2.ftcdn.net/v2/jpg/01/67/74/79/1000_F_167747932_NE1da5cf9FM30QExtlFjbmk9ypItoJl2.jpg"
   }
   return (
     <div className="my-3">
