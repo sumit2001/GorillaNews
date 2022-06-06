@@ -55,7 +55,7 @@ const News = (props) => {
 
   return (
     <>
-      <h1 className="text-center mb-4" style={{ marginTop: "65px" }}>NewsGorilla - Top {capitalizeFirstLetter(props.category)} HeadLines</h1>
+      <h1 className="text-center mb-4" style={{ marginTop: "65px" }}>NewsGorilla - Top {capitalizeFirstLetter(props.category === "top" ? "" : props.category)} HeadLines</h1>
       {loading && <Spinner />}
       <div>{loading}</div>
       {totalResults > 0 ? <InfiniteScroll
