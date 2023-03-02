@@ -11,14 +11,14 @@ const News = (props) => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
   const [totalResults, setTotalResults] = useState(0);
-
   const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
   const updateNews = async () => {
     props.setProgress(0);
-    let url = `https://newsdata.io/api/1/news?apikey=${props.apiKey}&language=en&category=${props.category}&page=${page}${props.country === "all" ? "" : "&country=" + props.country}`;
+
+    let url = `https://newsdata.io/api/1/news?apikey=${props.apiKey}&language=en&category=${props.category}${page == 0 ? "" : "&page=" + page}${props.country === "all" ? "" : "&country=" + props.country}`;
     // setState({ loading: true })
     setLoading(true)
     let data = await fetch(url);
@@ -45,12 +45,12 @@ const News = (props) => {
   }, [])
 
   const fetchMoreData = async () => {
-    let url = `https://newsdata.io/api/1/news?apikey=${props.apiKey}&language=en&category=${props.category}&page=${page + 1}${props.country === "all" ? "" : "&country=" + props.country}`;
+    let url = `https://newsdata.io/api/1/news?apikey=${props.apiKey}&language=en&category=${props.category}${page == 0 ? "" : "&page=" + page}${props.country === "all" ? "" : "&country=" + props.country}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     setArticles(articles.concat(parsedData.results))
     setTotalResults(parsedData.totalResults)
-    setPage(page + 1)
+    setPage(parsedData.nextPage)
   }
 
   return (
